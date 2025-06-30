@@ -282,11 +282,12 @@ img{
  }
 .main__gradient {
   position: absolute;
-  right: 60px;
-  width: 591px;
+  right: 49px;
+  width: 593px;
   height: auto;
   z-index: 2;
-  rotate: 120deg;
+  rotate: 275deg;
+  bottom: 82px;
 }
 @media screen and (max-width: 1023px) {
   .main__gradient {
@@ -381,7 +382,7 @@ img{
   align-items: stretch;
 }
 .main__photo {
- max-width: 337px;
+ max-width: 407px;
  height: auto;
  z-index: 1;
 }
@@ -610,8 +611,8 @@ body .main__text-block {
 }
 .portfolio__block {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 27px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
 }
 @media screen and (max-width: 1023px) {
   .portfolio__block {
@@ -636,14 +637,15 @@ body .main__text-block {
   width: 100%;
   border-radius: 20px;
   border: 1px solid #414a5a;
-  background: linear-gradient(45deg, rgb(20, 27, 42) 0%, rgb(14, 20, 30) 100%);
   opacity: 0;
   transform: translateX(-100%);
   transition: transform 1s ease-out, opacity 1s ease-out;
+  background-color: #1f89db0f;
 }
 .portfolio__block.loaded .portfolio__box {
   opacity: 1;
   transform: translateX(0);
+  display: inline-block;
 }
 @media screen and (max-width: 1439px) {
   .portfolio__box {
@@ -658,14 +660,31 @@ body .main__text-block {
   border-top-right-radius: 20px;
   width: 100%;
   height: auto;
+  background-color: #ddd;
 }
 .portfolio__link {
   position: absolute;
   bottom: 20px;
   right: 20px;
 }
-	.portfolio__link img{
-		width: 15px;
+.portfolio-iconset {
+   position: absolute;
+   bottom: 50px;
+   right: 2px;
+   display: flex;
+   gap: 2px;
+   background: rgba(255, 255, 255, 0.3); /* opsiyonel */
+   padding: 3px;
+   border-radius: 8px;
+   backdrop-filter: blur(4px); /* isteğe bağlı şeffaflık efekti */
+}
+
+
+.portfolio-iconset img {
+	width: 26px;
+	}
+.portfolio__link img{
+		width: 13px;
 	}
 @media screen and (max-width: 1023px) {
   .portfolio__link {
@@ -680,10 +699,10 @@ body .main__text-block {
 }
 .portfolio__box-text {
   text-align: center;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 27px;
   font-weight: 400;
-  padding: 15px 5px;
+  padding: 9px 5px;
   margin: 0;
 }
 @media screen and (max-width: 1023px) {
