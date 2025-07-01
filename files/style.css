@@ -305,7 +305,7 @@ img{
   font-family: "Roboto";
   font-size: 87px;
   line-height: 96px;
-  background: linear-gradient(90deg, #f42a8b 0%, #1f89db 100%);
+  background: linear-gradient(260deg, #f42a8b 0%, #1f89db 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -664,8 +664,8 @@ body .main__text-block {
 }
 .portfolio__link {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 14px;
+  right: 12px;
 }
 .portfolio-iconset {
    position: absolute;
@@ -681,7 +681,7 @@ body .main__text-block {
 
 
 .portfolio-iconset img {
-	width: 26px;
+	width: 32px;
 	}
 .portfolio__link img{
 		width: 13px;
@@ -699,11 +699,12 @@ body .main__text-block {
 }
 .portfolio__box-text {
   text-align: center;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 27px;
   font-weight: 400;
-  padding: 9px 5px;
+  padding: 9px 2px;
   margin: 0;
+  font-family: "Roboto Mono", monospace;
 }
 @media screen and (max-width: 1023px) {
   .portfolio__box-text {
