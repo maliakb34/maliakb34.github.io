@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const cardsContainer = document.querySelector(".services__cards");
   const cards = document.querySelectorAll(".services__card");
-  const portfolioBlock = document.querySelector(".portfolio__block");
 
   const toggleDropdown = () => {
     if (dropdown) {
@@ -119,20 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(cardsContainer);
   }
 
-  if (portfolioBlock) {
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            portfolioBlock.classList.add("loaded");
-            observer.disconnect();
-          }
-        });
-      },
-      { threshold: 0.25 }
-    );
-    observer.observe(portfolioBlock);
-  }
+
 });
 
 
